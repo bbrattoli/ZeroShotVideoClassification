@@ -1,5 +1,4 @@
 # Introduction
-Code for the submitted paper 7378 entitled:
 
 ## Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications
 
