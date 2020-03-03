@@ -5,6 +5,9 @@
 Learn a video representation that can generalize to unseen actions. 
 Semantic information are used as supervision. In particular, the visual representation is mapped into the Word2Vec embedding, where words semantically related are closer to each other in an euclidean sense.
 
+## Checkpoints
+The trained models, used to produce the numbers in the paper, can be downloaded [here](https://drive.google.com/open?id=1OR89Z4GxxQOuOw376sc0Db9lBU0TxKWb).
+
 # Install
 ## Requirements
 Run `install.sh` to get the uncommon libraries (faiss, tensorboardx, joblib) and the latest version of pytorch compatible with cuda 9.2 installed in the docker.
