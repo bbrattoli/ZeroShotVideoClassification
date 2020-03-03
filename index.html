@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150224311-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-150224311-1');
+    </script>
+
+
+    <title>Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta property="og:image" content="images/eccv_pipeline_diagram_new_symbols_v2_4.jpg">
+    <meta property="og:title" content="A Style-Aware Content Loss for Real-time HD Style Transfer">
+
+
+    <script type="text/javascript">
+        // redefining default features
+        var _POPUP_FEATURES = 'width=500,height=300,resizable=1,scrollbars=1,titlebar=1,status=1';
+    </script>
+    <link media="all" href="css/mainstyles.css" type="text/css" rel="StyleSheet">
+    <style type="text/css" media="all">
+        IMG {
+            PADDING-RIGHT: 0px;
+            PADDING-LEFT: 0px;
+            FLOAT: right;
+            PADDING-BOTTOM: 0px;
+            PADDING-TOP: 0px
+        }
+        #primarycontent {
+            MARGIN-LEFT: auto; ; WIDTH: expression(document.body.clientWidth >
+        1000? "1000px": "auto" ); MARGIN-RIGHT: auto; TEXT-ALIGN: left; max-width:
+        1000px }
+        BODY {
+            TEXT-ALIGN: center
+        }
+        table.comparison td {
+            PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; BORDER-COLLAPSE: collapse; border-spacing: 0;
+            width: 11.1111111%
+        }
+        td.ours {
+          border-right: solid 0px #000; 
+          border-left: solid 0px #000;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="primarycontent">
+<center><h1>Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications</h1></center>
+<center><h2>
+  <a href="http://bbrattoli.github.io">Biagio Brattoli</a>*&nbsp;&nbsp;&nbsp;
+  <a href="">Joe Tighe</a>
+  <a href="">Fedor Zhdanov</a>
+</h2></center>
+<center><h2>
+  <a href="http://www.vision.caltech.edu/Perona.html">Pietro Perona</a>
+  <a href="">Krzysztof Chalupka</a>
+</h2>
+
+</center>
+<center><h2><a href="https://hci.iwr.uni-heidelberg.de/compvis">Heidelberg University</a></h2></center>
+<center><h2>In CVPR 2020</h2></center>
+<center><h2><strong><a href="##############">Paper</a> |  <a href="https://github.com/bbrattoli/ZeroShotVideoClassification">Code</a></strong> </h2></center>
+<center style="overflow:hidden;">
+<!--    <a href="images/teaser_eccv18.jpg">-->
+    <img src="images/page1.png" width="450" class="center" style="padding-top:10px">
+
+<!--    </a>-->
+    </center>
+<p></p>
+
+
+ <p>
+</p><h2>Abstract</h2>
+
+<div style="font-size:14px"><p>
+Trained on large datasets, deep learning (DL) can accurately
+classify videos into hundreds of diverse classes.
+However, video data is expensive to annotate. Zero-shot
+learning (ZSL) proposes one solution to this problem. ZSL
+trains a model once, and generalizes to new tasks whose
+classes are not present in the training dataset. We propose
+the first end-to-end algorithm for ZSL in video classification.
+Our training procedure builds on insights from
+recent video classification literature and uses a trainable
+3D CNN to learn the visual features. This is in contrast
+to previous video ZSL methods, which use pretrained feature
+extractors. We also extend the current benchmarking
+paradigm: Previous techniques aim to make the test task
+unknown at training time but fall short of this goal. We
+encourage domain shift across training and test data and
+disallow tailoring a ZSL model to a specific test dataset.
+We outperform the state-of-the-art by a wide margin.
+</p></div>
+
+<a href="###############"><img style="float: left; padding: 10px; PADDING-RIGHT: 30px;" alt="paper thumbnail" src="images/paper_thumbnail.png" width="170"></a>
+<br>
+
+
+
+<h2>Paper</h2>
+<p><a href="#########">arxiv [COMING SOON!]</a>,  2020.</p>
+
+
+
+<h2>Citation</h2>
+<p>Biagio Brattoli, Joe Tighe, Fedor Zhdanov, Pietro Perona, Krzysztof Chalupka.
+"Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications", in Computer Vision and Pattern Recognition (CVPR),
+2020.
+<br>(* indicates equal contributions)
+<a href="bibtex.txt">Bibtex</a>
+
+</p>
+
+<!--
+<h2>Code and models: <a href="https://github.com/Confusezius/metric-learning-mining-interclass-characteristics">PyTorch</a>
+    <br>
+Poster: <a href="">poster.pdf</a></h2>
+<br>
+
+<h1 align="center">Experiments</h1>
+
+<h2>Learned Embedding</h2>
+<p>
+    <img src="images/qualitative/class_umap_horizontal.png" width="350" style="padding: 25px 50px 75px 100px;">
+    <img src="images/qualitative/intraclass_umap_horizontal.png" width="350" style="padding: 25px 50px 75px 100px;">
+    UMAP projection for CARS196 of learned class specific embedding (left) and inter-class embedding (right).
+    Seven clusters are selected, showing six images near the centroid and their ground-truth labels.
+    We see that the encoding extracts class pecific information and ignores other (e.g. orientation) in the left embedding.
+    On the other hand, the inter-class embedding (right) learns to ignore class specific features.
+</p>
+
+<h2>Comparison with SOTA</h2>
+<p>
+    <img src="images/tables/CARS196.png" width="350" style="padding: 25px 50px 75px 100px;">
+    <img src="images/tables/CUB200-2011.png" width="350" style="padding: 25px 50px 75px 100px;">
+</p>
+
+<p>
+    <img src="images/tables/SOP.png" width="350" style="padding: 25px 50px 75px 100px;">
+    <img src="images/tables/In-Shop.png" width="350" style="padding: 25px 50px 75px 100px;">
+    <img src="images/tables/VehicleID.png" width="350" style="padding: 25px 50px 75px 100px;">
+</p>
+-->
+    
+<p>&nbsp;</p>
+</div></body></html>

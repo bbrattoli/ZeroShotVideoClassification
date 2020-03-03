@@ -1,0 +1,7 @@
+@conference{brattoli2020zsl,
+  title={Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications},
+  author={Brattoli, Biagio and Tighe, Joe and Zhdanov, Fedor and Perona, Pietro and Chalupka, Krzysztof},
+  booktitle={IEEE conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2020}
+}
+
