@@ -1,6 +1,8 @@
 # Introduction
 
-Official code of the CVPR 2020 paper 'Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications'. [arxiv](https://arxiv.org/abs/2003.01455)
+Official code of the CVPR 2020 paper 
+```Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications```
+[Website](https://bbrattoli.github.io/ZeroShotVideoClassification/) [Arxiv](https://arxiv.org/abs/2003.01455)
 
 <!---## Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications-->
 ## Summary
