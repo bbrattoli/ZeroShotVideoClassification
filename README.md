@@ -1,6 +1,9 @@
 # Introduction
 
-## Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications
+Official code of the CVPR 2020 paper 'Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications'. [arxiv](https://arxiv.org/abs/2003.01455)
+
+<!---## Rethinking Zero-shot Video Classification: End-to-end Training for Realistic Applications-->
+## Summary
 
 Learn a video representation that can generalize to unseen actions. 
 Semantic information are used as supervision. In particular, the visual representation is mapped into the Word2Vec embedding, where words semantically related are closer to each other in an euclidean sense.
