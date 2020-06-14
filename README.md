@@ -37,6 +37,9 @@ The script `run.sh` shows an example of parameters for starting the training of 
 
 ## Training
 
+### get_dataset
+In case you want to train your model on Kinetics, you need to adapt the function get_kinetics() in auxiliary/auxuliary_dataset.py according to the format in which Kinetics is stored on your machine. The current version is just a placeholder and will NOT work right away.
+
 ### train on Kinetics, test on [UCF101, HMDB51]. End2End mode
 ```
 python3 main.py --n_epochs 150 --bs 22 --lr 1e-3 --network r2plus1d_18 --dataset kinetics2both --save_path PATH_TO_RESULT_FOLDER --nopretrained
